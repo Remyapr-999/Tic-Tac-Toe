@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+    </head>
+  <body>
+    <!--<center>-->
+      <div class="box">
+        <div class="top"><div class="left"><span>Player 1<h2>X</h2></span></div> <h2 class="tictachead">TIC-TAC-TOE</h2> <div class="right"><span>Player 2<h2>O</h2></span></div></div>
+        <div class="middle">
+
+
+        <!--First row of button starts-->
+
+        <input onclick="mouseClicked(this.id)" type="button" id="1" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="2" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="3" value=" "></input>
+        <br>
+
+        <!--Second row of button starts-->
+
+        <input onclick="mouseClicked(this.id)" type="button" id="4" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="5" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="6" value=" "></input>
+        <br>
+
+        <!--Third row of button starts-->
+
+        <input onclick="mouseClicked(this.id)" type="button" id="7" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="8" value=" "></input>
+        <input onclick="mouseClicked(this.id)" type="button" id="9" value=" "></input>
+        <br>
+        </div>
+
+        <button type="button" onclick="document.location.reload();" class="playagain">PLAY AGAIN</button>   <!--Button for replay-->
+      <!--</div>
+
+      <div id="try">
+
+      </div>-->
+
+
+      <!-- The Modal (GAME OVER) -->
+      <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">OK</span>
+        <img src="gameover.png" width="50%">
+        <h1>Sorry</h1>
+      </div>
+
+      </div>
+      <!-- The Modal Ends(GAME OVER)-->
+
+      <!-- The Modal (X Wins) -->
+      <div id="xmyModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="xclose"><button>ok</button></span>
+        <img src="cong.gif" width="50%" height="350px">
+        <h1>X Wins...!!</h1>
+      </div>
+
+      </div>
+      <!-- The Modal Ends(X Wins)-->
+
+            <!-- The Modal (O Wins) -->
+            <div id="omyModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="oclose"><button>ok</button></span>
+              <img src="cong.gif" width="50%" height="350px">
+              <h1>O Wins...!!</h1>
+            </div>
+
+            </div>
+            <!-- The Modal Ends(O Wins)-->
+
+
+    </center>
+    <br>
+
+
+  </body>
+  </html>
